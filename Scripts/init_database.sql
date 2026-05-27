@@ -17,7 +17,7 @@ GO
 IF EXISTS(SELECT 1 FROM sys.databases WHERE name = 'DataWareHouse') 
 BEGIN
   ALTER DATABASE DataWareHouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-  DROP Warehouse;
+  DROP DataWareHouse;
   END
 GO
 

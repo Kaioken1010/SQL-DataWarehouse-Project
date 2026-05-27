@@ -1,8 +1,8 @@
-# SQL-DataWarehouse-Project
+# SQL-DataWareHouse-Project
 
 Project Introduction
 
-Welcome to my SQL Data Warehouse Project! This project demonstrates the end-to-end design and implementation of a modern data warehouse using SQL, focused on transforming raw data into meaningful business insights.
+Welcome to my SQL DataWareHouse Project! This project demonstrates the end-to-end design and implementation of a modern data warehouse using SQL, focused on transforming raw data into meaningful business insights.
 
 The objective of this project is to showcase core data engineering and data analytics concepts, including data extraction, transformation, loading (ETL), data modeling, data cleaning, and analytical querying. The warehouse is designed to organize and structure data efficiently, enabling better reporting, performance analysis, and business decision-making.
 

@@ -1,3 +1,15 @@
+/*
+====================================
+CREATE DATABASE AND SCHEMAS 
+====================================
+1. This script creates a new database 'DataWareHouse' after checking if it already exists.
+the schemas are also created in the database- 'bronze' , 'silver', 'gold' 
+
+2. --SCHEMA CHECK-- SHOULD BE EXECUTED AFTER CREATING DATABASE AND SCHEMAS 
+
+**BE CAUTIUOS RUNNNIG THIS SCRIPT AS IT WILL DROP THE EXISTING DATABASE(IF PRESENT) ALONG 
+WITH DATA IN IT.
+*/
 USE master:
 GO
 
@@ -28,3 +40,6 @@ GO
 CREATE SCHEMA silver; --final data structure for analysis and business
 GO 
 
+
+--SCHEMA CHECK--
+SELECT * FROM sys.schemas;

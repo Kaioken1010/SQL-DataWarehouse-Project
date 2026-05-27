@@ -3,7 +3,7 @@
 CREATE DATABASE AND SCHEMAS 
 ====================================
 1. This script creates a new database 'DataWareHouse' after checking if it already exists.
-the schemas are also created in the database- 'bronze' , 'silver', 'gold' 
+the schemas are also created in the database- 'bronze' , 'silver', 'gold' (Medallian structure)
 
 2. --SCHEMA CHECK-- SHOULD BE EXECUTED AFTER CREATING DATABASE AND SCHEMAS 
 

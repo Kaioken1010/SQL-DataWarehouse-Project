@@ -1,8 +1,10 @@
 # SQL Data WareHouse Project
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jayesh-kumar10)
+
 ## 📊 Project Overview
 
-A comprehensive **SQL Server (T-SQL) Data Warehouse** implementation following the **Medallion Architecture** (Bronze-Silver-Gold layers). This project demonstrates a complete ETL pipeline that extracts data from multiple sources, applies rigorous data quality standards, and creates business-ready analytics models.
+A comprehensive **SQL Server (T-SQL) Data Warehouse** implementation following the **Medallion Architecture** (Bronze-Silver-Gold layers). This project demonstrates a complete ETL pipeline that extracts data from multiple sources, transforms it through different layers of processing, and loads it into an analytics-ready star schema.
 
 ## 🎯 Project Goals
 
@@ -48,6 +50,5 @@ The project follows a **3-layer Medallion Architecture**:
   - Exploratory Data Analysis (EDA) queries for data profiling and business insights
 
 - **Advanced Analytics & Reporting**:
-  - **`gold.customer_report`**: Comprehensive customer metrics including segmentation (VIP, Regular, New), age groups, customer lifetime value, recency analysis, and KPIs such as average order value and monthly spend patterns
-  - **`gold.product_report`**: Product performance insights with revenue-based segmentation (High-Performer, Mid-Range, Low-Performer), aggregated metrics (total orders, sales, quantities), and key indicators like average order revenue and monthly revenue trends
-
+  - **`gold.customer_report`**: Comprehensive customer metrics including segmentation (VIP, Regular, New), age groups, customer lifetime value, recency analysis, and KPIs such as average order value and total purchases
+  - **`gold.product_report`**: Product performance insights with revenue-based segmentation (High-Performer, Mid-Range, Low-Performer), aggregated metrics (total orders, sales, quantities), and key product analytics

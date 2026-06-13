@@ -2,7 +2,7 @@
 
 ## 📊 Project Overview
 
-A comprehensive **SQL Server (T-SQL) Data Warehouse** implementation following the **Medallion Architecture** (Bronze-Silver-Gold layers). This project demonstrates a complete ETL pipeline that extracts data from multiple sources (CRM and ERP systems), transforms and cleanses it through progressive layers, and prepares it for analytics and business intelligence.
+A comprehensive **SQL Server (T-SQL) Data Warehouse** implementation following the **Medallion Architecture** (Bronze-Silver-Gold layers). This project demonstrates a complete ETL pipeline that extracts data from multiple sources (CRM & ERP systems), transforms it through quality checks and standardization, and loads it into a star schema dimensional model for analytics.
 
 ## 🎯 Project Goals
 
@@ -34,6 +34,16 @@ The project follows a **3-layer Medallion Architecture**:
   - **Duplicate Removal**: Using ROW_NUMBER() to identify and keep only the latest records
   - **Data Quality Validation**: Handling NULL values and inconsistent data formats
 
-### 🟡 **Gold Layer** - Analytics Ready (Planned/TBD)
-- **Purpose**: Aggregated, business-ready data for reporting and analysis
-- **Status**: Reserved for future development and dimensional modeling
+### 🟡 **Gold Layer** - Analytics Ready (Star Schema)
+- **Purpose**: Aggregated, business-ready data modeled as dimensional views for reporting and analysis
+- **Architecture**: Star Schema implementation with one fact table and dimension tables
+- **Dimensional Views**:
+  - **`gold.dim_customers`**: Customer dimension with surrogate keys, demographics (name, country, gender, marital status, birthdate)
+  - **`gold.dim_products`**: Product dimension with surrogate keys, product details (name, category, subcategory, cost, line, start date)
+  - **`gold.fact_sales`**: Fact table aggregating sales transactions with foreign keys to dimensions (order details, quantities, prices, sales amounts)
+- **Key Features**:
+  - Surrogate keys (ROW_NUMBER) for efficient joins and referential integrity
+  - Multi-source data integration (CRM as master for customers, ERP for augmentation)
+  - Historical data filtering (excluding ended products)
+  - Exploratory Data Analysis (EDA) queries for data profiling and business insights
+- **Analysis Queries**: Included magnitude analysis and customer/product exploratory queries

@@ -2,7 +2,7 @@
 
 ## 📊 Project Overview
 
-A comprehensive **SQL Server (T-SQL) Data Warehouse** implementation following the **Medallion Architecture** (Bronze-Silver-Gold layers). This project demonstrates a complete ETL pipeline that extracts data from multiple sources (CRM & ERP systems), transforms it through quality checks and standardization, and loads it into a star schema dimensional model for analytics.
+A comprehensive **SQL Server (T-SQL) Data Warehouse** implementation following the **Medallion Architecture** (Bronze-Silver-Gold layers). This project demonstrates a complete ETL pipeline that extracts data from multiple sources, applies rigorous data quality standards, and creates business-ready analytics models.
 
 ## 🎯 Project Goals
 
@@ -46,4 +46,8 @@ The project follows a **3-layer Medallion Architecture**:
   - Multi-source data integration (CRM as master for customers, ERP for augmentation)
   - Historical data filtering (excluding ended products)
   - Exploratory Data Analysis (EDA) queries for data profiling and business insights
-- **Analysis Queries**: Included magnitude analysis and customer/product exploratory queries
+
+- **Advanced Analytics & Reporting**:
+  - **`gold.customer_report`**: Comprehensive customer metrics including segmentation (VIP, Regular, New), age groups, customer lifetime value, recency analysis, and KPIs such as average order value and monthly spend patterns
+  - **`gold.product_report`**: Product performance insights with revenue-based segmentation (High-Performer, Mid-Range, Low-Performer), aggregated metrics (total orders, sales, quantities), and key indicators like average order revenue and monthly revenue trends
+
